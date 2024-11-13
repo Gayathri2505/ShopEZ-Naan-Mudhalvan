@@ -1,0 +1,5 @@
+save the below as .env inside server folder 
+
+PORT=3001
+MONGO_URI = connex string
+JWT_SECRET=437a2301a7d72344f3572933b46dda0fba1a0201e2f1e89065e98e3e9f0a680c

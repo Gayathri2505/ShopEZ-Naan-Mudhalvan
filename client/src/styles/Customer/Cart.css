@@ -1,0 +1,270 @@
+/* Overall Page */
+.cartPage {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.cartContents {
+    width: 65%;
+    max-width: 800px;
+    min-height: 400px;
+    max-height: 75vh; 
+    overflow-y: auto; 
+    background-color: #fff8f8;
+    box-shadow: 0 4px 12px rgba(108, 63, 49, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartContents:hover {
+    box-shadow: 0 10px 30px rgba(108, 63, 49, 0.3);
+}
+
+/* Empty Cart Message */
+.cartContents p {
+    color: #8a6454; /* Light brown for text */
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Cart Item */
+.cartItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0c3b4;
+}
+
+.cartItem:last-child {
+    border-bottom: none;
+}
+
+/* Item Image */
+.cartItem img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Item Data */
+.cartItem-data {
+    flex-grow: 1;
+}
+
+.cartItem-data h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6c3f31;
+}
+
+.cartItem-data p {
+    color: #9d7a6a;
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    text-align: left;
+}
+
+.cartItem-data-price {
+    font-size: 1rem;
+    color: #6c3f31;
+}
+
+/* Quantity Controls */
+.cartItem-controls-below-image {
+    position: absolute;
+    top: 120px; 
+    left: 50px;  
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.cartItem-controls-below-image button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    color: #6c3f31;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.cartItem-controls-below-image span {
+    font-size: 1.1rem;
+    color: #6c3f31;
+}
+
+/* Remove Item Button */
+.cartItem .btn {
+    background-color: #8a2700; /* Darker brown for remove button */
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cartItem .btn:hover {
+    background-color: #6e260c; /* Darker on hover */
+}
+
+/* Cart Summary */
+.cartPriceBody {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(108, 63, 49, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 300px;
+    width: 100%;
+    max-height: fit-content;
+}
+
+.cartPriceBody h4 {
+    font-size: 1.3rem;
+    color: #381d1a;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cartPriceBody span {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #8a6454;
+    margin-bottom: 0.7rem;
+}
+
+.cartPriceBody span p {
+    margin: 0;
+}
+
+.cartPriceBody hr {
+    border: none;
+    border-top: 1px solid #e0c3b4;
+    margin: 1rem 0;
+}
+
+.cartPriceBody h5 {
+    font-size: 1.2rem;
+    color: #8a4d2d;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Checkout Button */
+.cartPriceBody button {
+    width: 100%;
+    background-color: #c77606;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+
+.cartPriceBody button:hover {
+    background-color: #875003;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #6c3f31;
+}
+
+.modal-body {
+    color: #8a6454;
+}
+
+.modal-body h4 {
+    font-size: 1.1rem;
+    color: #6c3f31;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.modal-body .form-floating input,
+.modal-body .form-floating select {
+    border-radius: 6px;
+    padding: 1rem;
+    border: 1px solid #d4b6a7;
+}
+
+.modal-body .form-floating label {
+    color: #8a6454;
+}
+
+.modal-body .form-select {
+    cursor: pointer;
+}
+
+/* Customize the appearance of the checkbox */
+.cartItem input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #8a4d34;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    outline: none;
+    margin-right: 1rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.cartItem input[type="checkbox"]:checked {
+    background-color: #a65a3b;
+    border-color: #a65a3b;
+}
+
+.cartItem input[type="checkbox"]:checked::after {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Add hover effect */
+.cartItem input[type="checkbox"]:hover {
+    background-color: #f5e4db;
+    border-color: #c47e63;
+}
+
+/* Add focus effect */
+.cartItem input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 3px rgba(196, 105, 69, 0.5);
+}

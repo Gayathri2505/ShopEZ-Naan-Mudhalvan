@@ -1,0 +1,214 @@
+.profile-page{
+    min-height: 100vh;
+}
+
+.page-container{
+    min-height: 70vh;
+}
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: flex-start;
+    margin-left: 20px; /* Keeping the profile on the left */
+}
+
+/* Profile Info Styling */
+.profile-info {
+    flex: 0 0 220px; /* Reduced width to free up space for orders */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e6e6e6;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #d9d9d9;
+}
+
+/* Profile Info Text */
+.profile-info h2 {
+    font-size: 1.6em;
+    margin: 10px 0;
+    color: #5C4033;
+    text-align: center;
+}
+
+.profile-info p {
+    color: #555;
+    text-align: center;
+}
+
+/* Order section container */
+.order-section-container {
+   /* flex: 0.6; */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+/* Tabs Buttons */
+/* Tabs Buttons */
+.order-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Base style for inactive tabs */
+.order-button {
+    background-color: #fff1eb; /* Default background */
+    color: #5C4033;
+}
+
+
+
+/* Active Tab */
+.order-button.active {
+    color: #5C4033;;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Orders Tab */
+.order-button.active.active-orders {
+    background-color: #e5c786; /* Warm brown for Active Orders */
+}
+
+/* Completed Orders Tab */
+.order-button.active.completed-orders {
+    background-color: #e2bc90; /* Green for Completed Orders */
+}
+
+/* Cancelled Orders Tab */
+.order-button.active.cancelled-orders {
+    background-color: #98303067; /* Red for Cancelled Orders */
+}
+
+/* Order Section Styling */
+.order-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 70vh; /* Adjust this value based on your layout */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    padding-right: 10px;
+    margin-bottom: 2vh;
+}
+
+
+.orders-container {
+    padding:20px; /* Increased padding for more breathing room */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    width: 80%;
+}
+
+/* Cart and Wishlist Container */
+.cart-wishlist-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    width: 30%;
+    margin-left: 30px;
+}
+
+/* Section Title */
+.cart-wishlist-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #10100f;
+}
+
+/* Cart and Wishlist Items */
+.cart-items, .wishlist-items {
+    display: flex;
+    flex-direction: row; /* Ensures items are stacked vertically */
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap; /* Allows absolute positioning of "View More" */
+}
+/* Item Card (Image, Price, Name) */
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.item-card p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+
+.view-more-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.view-more {
+    margin-top: 10px;
+    align-self: flex-end; /* Moves the link to the right */
+    color: #674806;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    background: none; /* Remove button background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+}
+
+.view-more:hover {
+    color: #281800;
+}
+
+.view-more::after {
+    content: ' ➔'; /* Adds right arrow */
+    margin-left: 5px; /* Spacing between text and arrow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.view-more:hover::after {
+    transform: translateX(3px); /* Slightly move arrow on hover */
+}

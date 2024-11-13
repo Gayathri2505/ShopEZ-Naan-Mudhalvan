@@ -1,0 +1,182 @@
+.products-filter {
+    flex: 0 0 25%;
+    border-right: 1px solid #E0CCBE;
+    border-top: 1px solid #E0CCBE;
+    min-height: 88vh;
+    padding-left: 1vw;
+    padding-top: 3vh;
+    background-color: #FAF3F0; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    max-width: 300px;
+    position: sticky;
+}
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-filters {
+    cursor: pointer;
+    color: #503C3C;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-right: 4vh;
+}
+.clear-filters:hover {
+    color: #211919;
+    text-decoration:underline;
+}
+
+.clear-icon {
+    margin-right: 2px; /* Space between icon and text */
+    font-size: 1em; /* Adjust size as needed */
+    color: #503C3C; /* Match the color to your theme */
+    vertical-align: middle; /* Align icon with text */
+}
+
+
+/* Title styles for each filter section */
+.products-filter h4 {
+    color: #6C3F31;
+    padding-bottom: 1vh;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f0f0f0; /* Subtle border under the title */
+}
+
+/* Filter body section for better spacing */
+.product-filters-body {
+    padding-left: 2vw;
+    margin-bottom: 1.5vh;
+}
+
+/* Title styles for sub-sections */
+.product-filters-body h6 {
+    color: #503C3C;
+    padding-bottom: 0.8vh;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Styling for each filter (checkboxes and radio buttons) */
+.sub-filter-body {
+    padding-left: 1.5vw;
+}
+
+.sub-filter-body label {
+    color: #3C3633;
+    cursor: pointer;
+    padding-bottom: 1vh;
+    display: block;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.sub-filter-body input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Change label color on hover */
+.sub-filter-body label:hover {
+    color: #D9534F;
+    font-weight: 500;
+}
+
+/* Sort section styles */
+.filter-sort {
+    margin-bottom: 2vh;
+}
+
+.filter-sort h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color:#503C3C;
+    margin-bottom: 1vh;
+}
+
+/* Styling for radio buttons in sort section */
+.filter-sort-body .form-check {
+    padding-bottom: 1vh;
+}
+
+.filter-sort-body input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Category section styling */
+.filter-categories {
+    margin-bottom: 2vh;
+}
+
+.filter-categories h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #503C3C;
+    margin-bottom: 1vh;
+}
+
+/* Gender filter section */
+.filter-gender {
+    margin-bottom: 2vh;
+}
+
+.filter-gender h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #503C3C;
+    margin-bottom: 1vh;
+}
+
+/* Responsive design: filter section adjustment on smaller screens */
+@media (max-width: 768px) {
+    .products-filter {
+        width: 100%;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #c6c4c4;
+        padding-top: 2vh;
+    }
+}
+
+/* Additional styles for form-check elements */
+.form-check {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vh;
+}
+
+.form-check-input[type="checkbox"], .form-check-input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #C47B56;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.form-check-input:checked {
+    background-color: #C47B56;
+    border-color: #C47B56;
+}
+
+
+/* Adjust radio button and checkbox size */
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: #C47B56;
+}
+
+/* Hover effect on filters */
+.sub-filter-body label:hover {
+    color: #C47B56; /* Blue color on hover */
+    font-weight: bold;
+}
+
+/* Optional: Add spacing between each filter section */
+.filter-sort, .filter-categories, .filter-gender {
+    margin-bottom: 1.5vh;
+}

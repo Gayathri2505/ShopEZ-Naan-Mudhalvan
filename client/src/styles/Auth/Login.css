@@ -1,0 +1,162 @@
+/* Container styling for the login form */
+.login-container {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Login form styling */
+.login-form-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/* Heading and text styling */
+.login-form-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Input styling */
+.login-form-section input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button styling */
+.login-form-section button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f6e8d8;
+    color: #6c3f31;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form-section button:hover {
+    background-color: #FFEFEF;
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4f;
+    margin-bottom: 1rem;
+}
+
+/* Forgot password link styling */
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.forgot-password-text {
+    font-size: 0.9rem;
+    color: #6c3f31;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the horizontal line */
+hr {
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Styling for the Sign-Up link */
+.sign-up-link {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.sign-up-link a {
+    color: #6c3f31;
+    text-decoration: none;
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+
+/*Popup container*/
+/* Popup container */
+.pass-reset {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pass-reset-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pass-reset-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pass-reset-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.pass-reset-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f6e8d8; /* Match login button's color */
+    color: #6c3f31;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pass-reset-content button:hover {
+    background-color: #f9e3ca; /* Slightly darker shade for hover effect */
+}
+
+.pass-reset-content button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

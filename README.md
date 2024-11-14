@@ -7,6 +7,7 @@ ShopEZ is a full-featured e-commerce platform aimed at providing a seamless shop
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Setup Instructions](#setup-instructions)
+- [Demo Video](#demo-video)
 
 ## Technologies Used
 

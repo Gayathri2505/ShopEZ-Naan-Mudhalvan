@@ -3,6 +3,11 @@
 ## Project Overview
 ShopEZ is a full-featured e-commerce platform aimed at providing a seamless shopping experience for users and efficient management tools for administrators. The platform allows customers to browse, filter, and purchase a diverse selection of products across categories like beauty, electronics, accessories, fashion, groceries, and stationery. Users can securely register, log in, and manage their profiles, with session handling enabled by JWT tokens and bcrypt-secure password hashing.
 
+## Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+
 ## Technologies Used
 
 ### Backend
@@ -56,14 +61,16 @@ To set up and run the **ShopEZ** e-commerce application, follow these steps:
 
 ### 3. Install Dependencies:
 - Open a terminal, navigate to the project directory client and server side seperated, and install the required dependencies by running:
-- i) **Server Dependencies**
+  i) **Server Dependencies**
   ```bash
   cd server
   npm install
-- ii) **Client Dependencies**
+  ```
+  ii) **Client Dependencies**
   ```bash
   cd client
   npm install
+  ```
 
 ### 4. Set Up Environment Variables
 - In the server, create a .env file to store environment-specific variables: database connection strings and JWT secrets. Contents in the .env file is as follows:
@@ -79,12 +86,12 @@ To start the application in develoment mode
    cd server
    node index.js
    ```
-  2. **Start the frintend**:
-     ```bash
-     cd client
-     npm start
-     ```
-Open http://localhost:3000 to view the frontend and interact with the application
+  2. **Start the frontend**:
+  ```bash
+  cd client
+  npm start
+  ```
+  Open http://localhost:3000 to view the frontend and interact with the application
 
 
 

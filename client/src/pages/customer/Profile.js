@@ -86,7 +86,7 @@ const Profile = () => {
     if (loading) return <p>Loading...</p>;
 
     // Filter orders based on their status
-    const activeOrders = orders.filter(order => order.orderStatus === "order placed" || order.orderStatus === "in-transit");
+    const activeOrders = orders.filter(order => order.orderStatus === "order placed" || order.orderStatus === "In-transit");
     const completedOrders = orders.filter(order => order.orderStatus === "delivered");
     const cancelledOrders = orders.filter(order => order.orderStatus === "cancelled");
 

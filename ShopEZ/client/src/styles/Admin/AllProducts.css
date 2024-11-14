@@ -1,0 +1,118 @@
+/* Apply Flexbox to the entire page layout */
+.all-products-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures the height is 100% of the viewport */
+}
+
+/* Make the content area flexible and take up remaining space */
+.all-products-page-content {
+    flex-grow: 1;
+    display: flex;
+    padding: 6vh 3vw 3vh 3vw;
+}
+
+.all-products-container {
+    display: flex;
+    width: 100%;
+    flex-grow: 0.5; 
+}
+
+/* Content area, will expand to fill available space */
+.all-products-body {
+    width: 80%;
+    padding: 0vh 2vw 0vh 2vw;
+    height: 95vh;
+    overflow-y: scroll; 
+}
+
+.all-products-body h3 {
+    color: #3C3633; /* Darker color from the primary palette for heading */
+}
+
+.all-products {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 5vh;
+}
+
+.all-product-item {
+    display: flex;
+    justify-content: center;
+}
+
+.all-product {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #3C3633; /* Text color matching the dark tone */
+    background-color: #fafafa; /* Soft beige background color */
+}
+
+.all-product:hover {
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: #fffaf3; /* Soft yellow hover effect */
+}
+
+.all-product img {
+    width: 90%;
+    margin-left: 5%;
+    height: 40vh;
+    border-radius: 0.4rem;
+}
+
+.all-product .all-product-data {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.all-product .all-product-data h6 {
+    margin: 0;
+    color: #3C3633; /* Darker color for subheadings */
+}
+
+.all-product .all-product-data p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #747264; /* Neutral tone for general text */
+}
+
+.all-product .all-product-data h5 {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #3C3633; /* Dark color for prices */
+}
+
+.all-product .all-product-data h5 s {
+    font-size: 0.8rem;
+    color: #FF4141; /* Red for striked-out price */
+}
+
+.all-product .all-product-data h5 p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #747264; /* Neutral tone for additional info */
+}
+
+.all-product button {
+    background-color: #6C3F31; /* Matching button color with navigation/footer */
+    color: white;
+    border: 1px solid #6C3F31;
+    width: 80%;
+    margin: 20px 10% 10px 10%;
+    padding: 7px 0;
+    border-radius: 0.5rem;
+}
+
+.all-product button:hover {
+    background-color: #503C3C; /* Darker shade on hover */
+    color: aliceblue;
+    border: 1px solid #503C3C;
+}

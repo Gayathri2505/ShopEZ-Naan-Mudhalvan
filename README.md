@@ -1,5 +1,5 @@
 # ShopEZ: E-Commerce Application
----
+
 ## Project Overview
 ShopEZ is a full-featured e-commerce platform aimed at providing a seamless shopping experience for users and efficient management tools for administrators. The platform allows customers to browse, filter, and purchase a diverse selection of products across categories like beauty, electronics, accessories, fashion, groceries, and stationery. Users can securely register, log in, and manage their profiles, with session handling enabled by JWT tokens and bcrypt-secure password hashing.
 

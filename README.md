@@ -93,5 +93,6 @@ To start the application in develoment mode
   ```
   Open http://localhost:3000 to view the frontend and interact with the application
 
-
+## Demo Video 
+[ShopEZ Demo](https://drive.google.com/file/d/1Jb7d1SN6HxgXltrtZ5N8u4vYwXsfyX52/view?usp=drive_link)
 

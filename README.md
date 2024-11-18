@@ -1,5 +1,7 @@
 # ShopEZ: E-Commerce Application
 
+## Team Id: NM2024TMID09551
+
 ## Project Overview
 ShopEZ is a full-featured e-commerce platform aimed at providing a seamless shopping experience for users and efficient management tools for administrators. The platform allows customers to browse, filter, and purchase a diverse selection of products across categories like beauty, electronics, accessories, fashion, groceries, and stationery. Users can securely register, log in, and manage their profiles, with session handling enabled by JWT tokens and bcrypt-secure password hashing.
 
@@ -77,8 +79,8 @@ To set up and run the **ShopEZ** e-commerce application, follow these steps:
 - In the server, create a .env file to store environment-specific variables: database connection strings and JWT secrets. Contents in the .env file is as follows:
   ```bash
   PORT= 3001 
-  MONGO_URI=<mongodb-connection-string>
-  JWT_SECRET=<jwt-secret>
+  MONGO_URI= <mongodb-connection-string>
+  JWT_SECRET= <jwt-secret>
 
 ### 5. Run the application
 To start the application in develoment mode
